@@ -1,0 +1,70 @@
+    .form-container {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="number"],
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .form-group textarea {
+        height: 100px;
+    }
+
+    .form-group input[type="file"] {
+        margin-top: 5px;
+    }
+
+    .form-group button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 4px;
+        background-color: #f2b825;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .confirm-container {
+        width: 25%;
+        float: right;
+        border: 1px solid #ccc;
+        padding: 20px;
+        order: 2;
+    }
+
+    .form-wrapper {
+        width: 70%;
+        margin-right: 20px;
+    }
+
+    .confirm-container img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .confirm-container button{
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 4px;
+        background-color: #f2b825;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }

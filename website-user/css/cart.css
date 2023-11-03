@@ -1,0 +1,138 @@
+.cart{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sort-line{
+    border-top: 5px solid black;
+    margin: 0 80px;
+}
+.section-cart{
+    display: flex;
+    width: 76%;
+}
+.wrap-cart{
+    width: 70%;
+}
+.product{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(193, 189, 189);
+}
+.product-img{
+    width: 15%;
+    margin-right:30px;
+}
+.product-img img{
+    align-items: center;
+    width: 100%;
+}
+.title{
+    margin-bottom: 50px;
+}
+.title p{
+    margin: 10px 0;
+}
+.content{
+    width: 50%;
+    display:flex;
+}
+.btn-close{
+    width: 27%;
+    height:50%;
+    display:flex;
+    justify-content: space-around;
+    align-items: end;
+    flex-direction: column;
+} 
+.btn-close .icon{
+    width: 8%;
+}  
+.btn-close .icon img{
+    width: 100%;
+}
+.infomation{
+    width:30%;
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+    margin-left: 30px;
+}
+.total-price{
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 0;
+}
+.total-price span{
+    color:red;
+    font-size: 26px;
+    font-weight: 700;
+}
+.infomation h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.quantity{
+    display:flex;
+}
+.product .content p{
+    margin: 10px 0;
+}
+.product .content input, .content button{
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    width: 35px;
+    background: #ededed;
+    border: 1px solid #dadbdd;
+    height: 30px;
+}
+.product .content button{
+    background: #fff;
+}
+.shipping{
+    margin-top:20px;
+}
+.btn-payment{
+    margin-top:20px;
+    display:flex;
+    justify-content: center;
+    justify-content: center;
+}
+.btn-payment button{
+    padding: 10px 80px;
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    font-size:18px;
+    margin-bottom: 20px;
+}
+.link{
+    margin-top: 10px;
+}
+.link span{
+    color:red;
+}
+.btn-close p{
+    font-weight: 700;
+    font-size: 18px;
+}
+.link, .note{
+    margin-left: 12%;
+}
+textarea{
+    margin-top: 10px;
+    background-color: #e5e5e5;
+    padding: 20px;
+}
+.btn-reply{
+    display:flex;
+    justify-content: center;
+}
+.maps{
+    margin-left: 7%;
+}

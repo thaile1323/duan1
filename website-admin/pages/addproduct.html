@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm sản phẩm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/addproduct.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div>
+            <img src="https://theme.hstatic.net/200000265619/1001091352/14/logo.png?v=52" alt="logo" height="50"
+                width="200">
+        </div>
+        <h2>Hello! Admin</h2>
+        <div class="profile">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.ixZ69lPCOZ3ZO5UqSHQGIAHaHa&pid=Api&P=0&h=180" alt="image"
+                height="30" width="30">
+            <span>Lê Hồng Thái</span>
+        </div>
+        <div class="general">
+            <span>General</span>
+        </div>
+        <ul>
+            <li><a href="../index.html">Order</a></li>
+            <li style="font-weight: 700;"><a href="./product.html">Product</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Report</a></li>
+            <li><a href="#">Account</a></li>
+        </ul>
+        <div class="bottom-sidebar">
+            <li><a href="#"><i class="fa-solid fa-gear"></i>Setting</a></li>
+            <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Log out</a></li>
+        </div>
+    </div>
+    <div class="header">
+        <div>
+            <span><i><img src="https://tse3.mm.bing.net/th?id=OIP.ixZ69lPCOZ3ZO5UqSHQGIAHaHa&pid=Api&P=0&h=180" width="30" height="30"></i>thailhps28248@fpt.edu.vn<i class="fa-solid fa-caret-down" style="color:#efe7e7; margin-left: 5px;"></i></span>
+        </div>
+    </div>   
+    <div id="content">
+        <div class="form-container">
+            <div class="confirm-container">
+                <h2>Confirm Form</h2>
+                <p><strong>Id_Product:</strong> <span id="confirm-ma-san-pham"></span></p>
+                <p><strong>Name Product:</strong> <span id="confirm-ten-san-pham"></span></p>
+                <p><strong>Price:</strong> <span id="confirm-gia-san-pham"></span></p>
+                <p><strong>Quantity:</strong> <span id="confirm-so-luong"></span></p>
+                <p><strong>Decribe:</strong> <span id="confirm-mo-ta"></span></p>
+                <p><strong>Image Product:</strong></p>
+                <img id="confirm-anh-san-pham" src="" alt="Ảnh sản phẩm">
+                <br>
+                <button>Confirm</button>
+            </div>
+            <div class="form-wrapper">
+                <h2>Add Product</h2>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="ma-san-pham">Id_Product</label>
+                        <input type="text" id="ma-san-pham" name="ma-san-pham" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ten-san-pham">Name Product</label>
+                        <input type="text" id="ten-san-pham" name="ten-san-pham" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gia-san-pham">Price</label>
+                        <input type="number" id="gia-san-pham" name="gia-san-pham" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="so-luong">Quatity</label>
+                        <input type="number" id="so-luong" name="so-luong" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mo-ta">Decribe</label>
+                        <textarea id="mo-ta" name="mo-ta" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="anh-san-pham">Product Image</label>
+                        <input type="file" id="anh-san-pham" name="anh-san-pham" accept="image/*" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>   
+    <script>
+        const form = document.querySelector('form');
+        const confirmMaSanPham = document.getElementById('confirm-ma-san-pham');
+        const confirmTenSanPham = document.getElementById('confirm-ten-san-pham');
+        const confirmGiaSanPham = document.getElementById('confirm-gia-san-pham');
+        const confirmSoLuong = document.getElementById('confirm-so-luong');
+        const confirmMoTa = document.getElementById('confirm-mo-ta');
+        const confirmAnhSanPham = document.getElementById('confirm-anh-san-pham');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const maSanPham = document.getElementById('ma-san-pham').value;
+            const tenSanPham = document.getElementById('ten-san-pham').value;
+            const giaSanPham = document.getElementById('gia-san-pham').value;
+            const soLuong = document.getElementById('so-luong').value;
+            const moTa = document.getElementById('mo-ta').value;
+            const anhSanPham = document.getElementById('anh-san-pham').value;
+
+            confirmMaSanPham.textContent = maSanPham;
+            confirmTenSanPham.textContent = tenSanPham;
+            confirmGiaSanPham.textContent = giaSanPham;
+            confirmSoLuong.textContent = soLuong;
+            confirmMoTa.textContent = moTa;
+            confirmAnhSanPham.src = URL.createObjectURL(document.getElementById('anh-san-pham').files[0]);
+        });
+    </script> 
+</body>
+
+</html>

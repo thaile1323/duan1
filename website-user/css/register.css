@@ -1,0 +1,100 @@
+.header-register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-family: inherit;
+    margin: 20px 0px;
+}
+.layout-page-register .form-sign-up form{
+    display:flex;
+    flex-direction: column;
+    margin-left: 38%;
+}
+.input-group button{
+    width:40px;
+    height: 38px;
+    position:relative;
+    left:5px;
+    border: 1px solid rgb(192, 187, 187);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-right: none;
+}
+
+.input-group input {
+    width: 300px; 
+    height:38px;
+    margin-bottom: 15px;
+    border-left: none;
+    border: 1px solid rgb(192, 187, 187);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    
+}
+.input-group input::placeholder {
+    padding-left: 15px;
+}
+.btn-sign-up{
+    display:block;
+    margin-bottom: 15px;
+}
+.btn-register{
+    padding: 10px;
+    background-color:#000;
+    color:white;
+    border-radius: 4px;
+}
+.btn-register input{
+    background-color:#000;
+    color:white;
+}
+.btn-return{
+    padding: 10px;
+    background-color:  #ccc;
+    border-radius: 4px;
+}
+.btn-register:hover ,
+.btn-return:hover{
+    background-color: #000;
+    color:white;
+}
+footer{
+    background-color: #f2efef;
+    margin-top: 30px;
+}
+.forget-password {
+    display: flex;
+    margin-left: 38%;
+    margin-top: 30px;
+}
+
+.forget-password a {
+    color: rgb(88, 88, 240);
+}
+
+.forget-password p {
+    padding: 0 5px 0 5px;
+}
+@media (max-width: 400px) {
+    .input-group input {
+width: 200px; 
+}
+.input-group button{
+    padding: 10px 12px;
+}
+.btn-sign-up{
+    margin-left: 20%;
+}
+}
+@media (max-width: 576px) {
+    .input-group input {
+    width: 250px; 
+}
+.input-group button{
+    padding: 10px 12px;
+}
+.btn-sign-up{
+    margin-left: 8%;
+}
+}

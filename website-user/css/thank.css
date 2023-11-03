@@ -1,0 +1,47 @@
+.fa-circle-check{
+    font-size: 55px;
+}
+.success{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 30px;
+}
+.thank{
+    width: 1440px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.infomation .table table{ width: 80%; text-align: left;margin-top: 20px;}
+
+.infomation thead tr th{
+    font-weight: bold;
+    background-color: #d8d8d8;
+    padding: 10px 3px;
+    text-align: start;
+}
+.infomation tbody tr td{
+    padding: 10px 0px;
+    border-top: 1px solid #ddd;
+    display: table-cell;
+    vertical-align: middle;
+}
+.contact{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact button{
+    margin-top: 20px;
+    padding: 10px 50px;
+    background-color: black;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 700;
+}
+.contact button:hover{
+    background-color: #c70303;
+}

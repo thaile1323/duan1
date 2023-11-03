@@ -1,0 +1,30 @@
+#content .row{
+    display: flex;
+}
+#content .row .col-md-3{
+    width: 20%;
+    border: 1px solid #e5e5e5;
+    margin-left: 10px;
+    padding: 0 5px;
+    border-radius: 4px;
+}
+#content .row .col-md-3 .card-body .card-title{
+    font-size:large;
+    color: #fff;
+}
+#content .row .col-md-3 .card-body .card-text{
+    font-size: xx-large; 
+    text-align: center;
+}
+#content .row .col-md-3:nth-child(1){
+    background-color: rgb(242, 35, 35);
+}
+#content .row .col-md-3:nth-child(2){
+    background-color: rgb(89, 151, 238);
+}
+#content .row .col-md-3:nth-child(3){
+    background-color: rgb(25, 221, 58);
+}
+#content .row .col-md-3:nth-child(4){
+    background-color: rgb(224, 242, 110);
+}
