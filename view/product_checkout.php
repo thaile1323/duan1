@@ -35,25 +35,30 @@
             <div id="custom-info-wp" class="fl-left">
                 <h3 class="title">THÔNG TIN KHÁCH HÀNG</h3>
                 <div class="detail">
-                    <div class="field-wp">
-                        <label>Họ tên</label>
-                        <input type="text" name="fullname" id="fullname" required>
+                    <div class="input_name">
+                        <input type="text" name="fullname" id="fullname" placeholder="Họ và tên" required>
                     </div>
-                    <div class="field-wp">
-                        <label>Email</label>
-                        <input type="email" name="email" id="email" required>
+                    <div class="input_group_info">
+                        <div class="email">
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="tel">                            
+                            <input type="tel" name="tel" id="tel" placeholder="Số điện thoại" required>
+                        </div>
                     </div>
-                    <div class="field-wp">
-                        <label>Địa chỉ nhận hàng</label>
-                        <input type="text" name="address" id="address" required>
+                    <div class="input_address">
+                        <div class="cod">
+                            <input type="radio" checked="checked" id="direct-payment" name="payment-method"
+                            value="direct-payment">
+                            <label for="direct-payment">Nhận và thanh toán tại cửa hàng</label>
+                        </div>                        
+                        <div class="at_shop">
+                            <input type="radio" id="payment-home" name="payment-method" value="payment-home">
+                            <label for="payment-home">Nhận và thanh toán tại nhà</label>
+                        </div>                       
                     </div>
-                    <div class="field-wp">
-                        <label>Số điện thoại</label>
-                        <input type="tel" name="tel" id="tel" required>
-                    </div>
-                    <div class="field-wp">
-                        <label>Ghi chú</label>
-                        <textarea name="note"></textarea>
+                    <div class="input_note">
+                        <textarea name="note" placeholder="Ghi chú"></textarea>
                     </div>
                 </div>
             </div>
@@ -108,22 +113,21 @@
                             </tfoot>
                         <?php endif;?>
                     </table>
-                    <div id="payment-checkout-wp">
-                        <ul id="payment_methods">
-                            <li>
-                                <input type="radio" checked="checked" id="direct-payment" name="payment-method"
-                                    value="direct-payment">
-                                <label for="direct-payment">Nhận và thanh toán tại cửa hàng</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="payment-home" name="payment-method" value="payment-home">
-                                <label for="payment-home">Nhận và thanh toán tại nhà</label>
-                            </li>
-                        </ul>
+                    <div class="add_voucher">
+                        <div class="voucher_image">
+                            <img src="https://cdn-icons-png.flaticon.com/128/8074/8074470.png">
+                        </div>
+                        <div class="add_code">
+                            <input type="text" name="code" id="code" placeholder="Nhập mã giảm giá">
+                        </div>
+                        <div class="add">                            
+                            <button>Áp dụng</button>
+                        </div>
                     </div>
-                    <div class="place-order-wp clearfix">
-                        <button type="submit" name="checkout">Đặt hàng</button>
+                    <div class="list_voucher">
+                        <p>Xem các voucher của bạn</p>
                     </div>
+                   
                 </div>
             </div>
         </div>
